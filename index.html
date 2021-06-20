@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Game</title>
+    <style>
+        body {
+            background-color: rgb(39, 39, 39);
+        }
+        .container {
+            background-color: cadetblue;
+            margin: auto;
+            margin-top: 100px;
+            width: 50%;
+            padding: 50px;
+            border: 1px solid black;
+            border-radius: 20px;
+            text-align: center;
+            font-size: larger;
+            font-weight: 500;
+        }
+        #guessButton{
+            background-color: coral;
+            border-radius: 5px;
+        }
+        .pastaImage {
+            width: 200px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Guess Game</h1>
+        <img class="pastaImage" src="pasteis.jpg" alt="">
+        <p>It's typical Portuguese pastry. Unfortunately, there is only one left... we will make a little game to decide who will get it. If a player guesses a secret number, he or she wins it!</p>
+        <label for="userGuess" id="userGuessLabel"></label>
+        <input type="number" id = userGuess>
+        <button id="guessButton">Guess</button>
+        <p id="result"></p>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
